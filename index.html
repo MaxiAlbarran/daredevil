@@ -1,79 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Daredevil</title>
-    <link rel="stylesheet" type="text/css" href="./styles/reset.css"/>
-    <link rel="stylesheet" type="text/css" href="./index.css">    
-
+    <link rel="stylesheet" type="text/css" href="./styles/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+    <!-- Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Murecho:wght@300;400;500;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <nav>
-        <div class="logo">
-            <p>Marvel</p>
-            <h1>Daredevil</h1>
-        </div>
-        <ul class="menu navbar">
-            <li>Personajes</li>
-            <li>Criticas y notas</li>
-            <li>Reparto</li>
-            <li>Contacto</li>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Murecho:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <p>Marvel</p>
+        <h1>Daredevil</h1>
+      </div>
+      <nav>
+        <ul class="menu navbar" id="menu">
+          <li onclick="handleChange()">Inicio</li>
+          <li onclick="handleChange()">Galeria</li>
+          <li onclick="handleChange()">Personajes</li>
+          <li onclick="handleChange()">Criticas y notas</li>
+          <li onclick="handleChange()">Reparto</li>
+          <li onclick="handleChange()">Contacto</li>
         </ul>
-    </nav>
+        <a href="javascript:void(0);" class="icon" onclick="handleChange()"
+          ><i class="fa fa-bars"></i>
+        </a>
+      </nav>
+    </header>
 
     <article>
-        <section class="serie-presentation">
-            <div class="presentation">
-                <h1>Daredevil</h1>
-                <h3>The devil of Hells Kitchen</h2>
-                <p>
-                    La serie de Daredevil gira en torno a Matthew Murdock, un abogado de día y superhéroe de noche. A pesar de ser ciego, posee un oído, un olfato, una fuerza y una agilidad increíblemente desarrolladas. Sin descanso, Matthew Murdock recorrerá las calles de Nueva York a la caza de todo tipo de criminales a los que no puede castigar un tribunal.
-                </p>
-            </div>
-            <div class="serie-img">
-                <img src="https://occ-0-32-1001.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABSayLl8kjqHoitLIfWiEmHrcSMfP1gATcQypUbr0NxYpM4MPUxoNmBpFNbZscyV22ucYyN-xAO1bowFgDfRSWd9c882JxL9-gV0q.jpg?r=d6a"
-                alt="Daredevil picture"/>
-            </div>
-        </section>
+      <section class="serie-presentation">
+        <div class="presentation">
+          <h1>Daredevil</h1>
+          <h3>The devil of Hells Kitchen</h3>
+          <p>
+            La serie de Daredevil gira en torno a Matthew Murdock, un abogado de
+            día y superhéroe de noche. A pesar de ser ciego, posee un oído, un
+            olfato, una fuerza y una agilidad increíblemente desarrolladas. Sin
+            descanso, Matthew Murdock recorrerá las calles de Nueva York a la
+            caza de todo tipo de criminales a los que no puede castigar un
+            tribunal.
+          </p>
+        </div>
+        <div class="serie-img">
+          <img
+            src="https://occ-0-32-1001.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABSayLl8kjqHoitLIfWiEmHrcSMfP1gATcQypUbr0NxYpM4MPUxoNmBpFNbZscyV22ucYyN-xAO1bowFgDfRSWd9c882JxL9-gV0q.jpg?r=d6a"
+            alt="Daredevil picture"
+          />
+        </div>
+      </section>
 
-        <section class="seasons-presentation">
-            <div class="season">
-                <img src="assets/home/seasonOne.webp" alt="King pin picture"/>
-                <h1>Temporada 1</h1>
-                <p>Esta es la historia de Matt Murdock, su vida de abogado y sus inicios como justiciero en la Cocina del Infierno, un barrio de Manhattan, Nueva York. </p>
-            </div>
-
-            <div class="season">
-                <img src="assets/home/seasonTwo.webp" alt="King pin picture"/>
-                <h1>Temporada 2</h1>
-                <p>Nuevas fuerzas están apareciendo en Hell's Kitchen. Ahora, el hombre sin miedo debe enfrentar a un nuevo adversario, Frank Castle y reencontrarse con un viejo amor, Elektra Natchios</p>
-            </div>
-
-            <div class="season">
-                <img src="assets/home/seasonThree.jpeg" alt="King pin picture"/>
-                <h1>Temporada 3</h1>
-                <p>Matthew Murdock reaparece poniendo en duda su futuro como el justiciero Daredevil y como abogado pero cuando su archienemigo Wilson Fisk es liberado de prisión, Murdock debe elegir entre esconderse del mundo o abrazar su destino como héroe.</p>
-            </div>
-        </section>
-    </article>
-    
-    <footer>
-        <div>
-            <p>Designed by <span>Maximiliano Albarran</span></p>
+      <section class="seasons-presentation">
+        <div class="season">
+          <img src="assets/home/seasonOne.webp" alt="King pin picture" />
+          <h1>Temporada 1</h1>
+          <p>
+            Esta es la historia de Matt Murdock, su vida de abogado y sus
+            inicios como justiciero en la Cocina del Infierno, un barrio de
+            Manhattan, Nueva York.
+          </p>
         </div>
 
-        <ul class="menu footer">
-            <li>Personajes</li>
-            <li>Criticas y notas</li>
-            <li>Reparto</li>
-            <li>Contacto</li>
-        </ul>
+        <div class="season">
+          <img src="assets/home/seasonTwo.webp" alt="King pin picture" />
+          <h1>Temporada 2</h1>
+          <p>
+            Nuevas fuerzas están apareciendo en Hell's Kitchen. Ahora, el hombre
+            sin miedo debe enfrentar a un nuevo adversario, Frank Castle y
+            reencontrarse con un viejo amor, Elektra Natchios
+          </p>
+        </div>
+
+        <div class="season">
+          <img src="assets/home/seasonThree.jpeg" alt="King pin picture" />
+          <h1>Temporada 3</h1>
+          <p>
+            Matthew Murdock reaparece poniendo en duda su futuro como el
+            justiciero Daredevil y como abogado pero cuando su archienemigo
+            Wilson Fisk es liberado de prisión, Murdock debe elegir entre
+            esconderse del mundo o abrazar su destino como héroe.
+          </p>
+        </div>
+      </section>
+    </article>
+
+    <footer>
+      <div>
+        <p>Designed by <span>Maximiliano Albarran</span></p>
+      </div>
+
+      <ul class="menu footer">
+        <li>Inicio</li>
+        <li>Galeria</li>
+        <li>Personajes</li>
+        <li>Criticas y notas</li>
+        <li>Reparto</li>
+        <li>Contacto</li>
+      </ul>
     </footer>
-</body>
+    <script>
+      const handleChange = () => {
+        let x = document.getElementById("menu");
+        if (x.className === "menu navbar") {
+          x.className += " responsive";
+        } else {
+          x.className = "menu navbar";
+        }
+      };
+    </script>
+  </body>
 </html>
