@@ -28,14 +28,24 @@
       </div>
       <nav>
         <ul class="menu navbar" id="menu">
-          <li onclick="handleChange()">Inicio</li>
-          <li onclick="handleChange()">Galeria</li>
-          <li onclick="handleChange()">Personajes</li>
-          <li onclick="handleChange()">Criticas y notas</li>
-          <li onclick="handleChange()">Reparto</li>
-          <li onclick="handleChange()">Contacto</li>
+          <li onclick="handleClick()"><a href="index.html">Inicio</a></li>
+          <li onclick="handleClick()">
+            <a href="pages/Gallery.html">Galeria</a>
+          </li>
+          <li onclick="handleClick()">
+            <a href="pages/Characters.html">Personajes</a>
+          </li>
+          <li onclick="handleClick()">
+            <a href="pages/Reviews.html">Criticas y notas</a>
+          </li>
+          <li onclick="handleClick()">
+            <a href="pages/Actors.html">Reparto</a>
+          </li>
+          <li onclick="handleClick()">
+            <a href="pages/Contact.html">Contacto</a>
+          </li>
         </ul>
-        <a href="javascript:void(0);" class="icon" onclick="handleChange()"
+        <a href="javascript:void(0);" class="icon" onclick="handleClick()"
           ><i class="fa fa-bars"></i>
         </a>
       </nav>
@@ -65,34 +75,43 @@
 
       <section class="seasons-presentation">
         <div class="season">
-          <img src="assets/home/seasonOne.webp" alt="King pin picture" />
-          <h1>Temporada 1</h1>
-          <p>
-            Esta es la historia de Matt Murdock, su vida de abogado y sus
-            inicios como justiciero en la Cocina del Infierno, un barrio de
-            Manhattan, Nueva York.
-          </p>
+          <a href="pages/Seasons/SeasonOne.html">
+            <img src="assets/home/seasonOne.webp" alt="Season one picture" />
+            <h1>Temporada 1</h1>
+            <p>
+              Esta es la historia de Matt Murdock, su vida de abogado y sus
+              inicios como justiciero en la Cocina del Infierno, un barrio de
+              Manhattan, Nueva York.
+            </p>
+          </a>
         </div>
 
         <div class="season">
-          <img src="assets/home/seasonTwo.webp" alt="King pin picture" />
-          <h1>Temporada 2</h1>
-          <p>
-            Nuevas fuerzas están apareciendo en Hell's Kitchen. Ahora, el hombre
-            sin miedo debe enfrentar a un nuevo adversario, Frank Castle y
-            reencontrarse con un viejo amor, Elektra Natchios
-          </p>
+          <a href="pages/Seasons/SeasonTwo.html">
+            <img src="assets/home/seasonTwo.webp" alt="Season two picture" />
+            <h1>Temporada 2</h1>
+            <p>
+              Nuevas fuerzas están apareciendo en Hell's Kitchen. Ahora, el
+              hombre sin miedo debe enfrentar a un nuevo adversario, Frank
+              Castle y reencontrarse con un viejo amor, Elektra Natchios
+            </p>
+          </a>
         </div>
 
         <div class="season">
-          <img src="assets/home/seasonThree.jpeg" alt="King pin picture" />
-          <h1>Temporada 3</h1>
-          <p>
-            Matthew Murdock reaparece poniendo en duda su futuro como el
-            justiciero Daredevil y como abogado pero cuando su archienemigo
-            Wilson Fisk es liberado de prisión, Murdock debe elegir entre
-            esconderse del mundo o abrazar su destino como héroe.
-          </p>
+          <a href="pages/Seasons/SeasonThree.html">
+            <img
+              src="assets/home/seasonThree.jpeg"
+              alt="Season three picture"
+            />
+            <h1>Temporada 3</h1>
+            <p>
+              Matthew Murdock reaparece poniendo en duda su futuro como el
+              justiciero Daredevil y como abogado pero cuando su archienemigo
+              Wilson Fisk es liberado de prisión, Murdock debe elegir entre
+              esconderse del mundo o abrazar su destino como héroe.
+            </p>
+          </a>
         </div>
       </section>
     </article>
@@ -103,23 +122,14 @@
       </div>
 
       <ul class="menu footer">
-        <li>Inicio</li>
-        <li>Galeria</li>
-        <li>Personajes</li>
-        <li>Criticas y notas</li>
-        <li>Reparto</li>
-        <li>Contacto</li>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="pages/Gallery.html">Galeria</a></li>
+        <li><a href="pages/Characters.html">Personajes</a></li>
+        <li><a href="pages/Reviews.html">Criticas y notas</a></li>
+        <li><a href="pages/Actors.html">Reparto</a></li>
+        <li><a href="pages/Contact.html">Contacto</a></li>
       </ul>
     </footer>
-    <script>
-      const handleChange = () => {
-        let x = document.getElementById("menu");
-        if (x.className === "menu navbar") {
-          x.className += " responsive";
-        } else {
-          x.className = "menu navbar";
-        }
-      };
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
