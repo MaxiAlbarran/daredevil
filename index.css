@@ -7,6 +7,7 @@ body {
   background-color: #edf2f4;
 }
 
+/*ESTILOS GLOBALESS HEADER & NAV & FOOTER)*/
 /* Header && Nav Style */
 
 header {
@@ -69,7 +70,96 @@ nav .icon {
   display: none;
 }
 
-/* Section Daredevil Presentation */
+/* Footer */
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #141313;
+  padding: 3.75rem;
+}
+
+footer div p {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+footer div span {
+  font-style: italic;
+  color: #ccc;
+}
+
+.menu.footer li {
+  color: #fff;
+}
+
+.menu.footer li:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: #ef233c;
+}
+
+@media (max-width: 576px) {
+  header {
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  header {
+    position: relative;
+  }
+
+  nav .icon {
+    display: block;
+    color: #fff;
+    font-size: 1.5rem;
+  }
+
+  nav .responsive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    background-color: rgba(43, 45, 66, 0.8);
+    color: #fff;
+  }
+
+  nav .responsive li {
+    width: 100%;
+    padding: 40px 0;
+  }
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+  }
+
+  footer div p {
+    font-size: 1rem;
+  }
+
+  footer .menu.footer {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/*ESTILOS HOME*/
 
 article .serie-presentation {
   display: flex;
@@ -163,81 +253,9 @@ article .serie-presentation {
   font-size: 100%;
 }
 
-/* Footer */
-
-footer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #141313;
-  padding: 3.75rem;
-}
-
-footer div p {
-  font-size: 1.2rem;
-  color: #fff;
-}
-
-footer div span {
-  font-style: italic;
-  color: #ccc;
-}
-
-.menu.footer li {
-  color: #fff;
-}
-
-.menu.footer li:hover {
-  cursor: pointer;
-  color: #fff;
-  background-color: #ef233c;
-}
-
-/* Media queries */
+/* Media queries HOME */
 
 @media (max-width: 576px) {
-  header {
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    padding: 20px;
-  }
-
-  .navbar {
-    display: none;
-  }
-
-  header {
-    position: relative;
-  }
-
-  nav .icon {
-    display: block;
-    color: #fff;
-    font-size: 1.5rem;
-  }
-
-  nav .responsive {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: absolute;
-    text-align: center;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 99;
-    background-color: rgba(43, 45, 66, 0.8);
-    color: #fff;
-  }
-
-  nav .responsive li {
-    width: 100%;
-    padding: 40px 0;
-  }
-
   article .serie-presentation {
     flex-direction: column;
     justify-content: center;
@@ -280,19 +298,107 @@ footer div span {
   .seasons-presentation .season p {
     width: 100%;
   }
+}
 
-  footer {
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
+/*ESTILOS DE SEASONS PAGES*/
+.seasonOptions {
+  width: 50%;
+  background-color: #ef233c;
+  margin: 0 auto 50px auto;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.seasonOptions ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: 3;
+}
+
+.seasonOptions ul li {
+  flex: 1;
+  padding: 40px 0;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  transition: 0.2s linear;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.seasonOptions ul li:hover {
+  background-color: #2b2d42;
+  color: #fff;
+}
+
+.seasonOptions ul li a {
+  cursor: pointer;
+}
+
+article section.seasonDescription {
+  width: 50%;
+  margin: 10px auto 50px auto;
+}
+
+article section.seasonDescription img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+article section.seasonDescription div {
+  width: 100%;
+  margin-top: 10px;
+  text-align: center;
+}
+
+article section.seasonDescription div h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+article section.seasonDescription div h3 {
+  font-size: 1.5rem;
+  color: #ccc;
+  margin: 10px 0 15px 0;
+}
+
+article section.seasonDescription div p {
+  font-size: 1.1rem;
+  width: 75%;
+  margin: 0 auto;
+  font-weight: 500;
+}
+
+@media (max-width: 576px) {
+  .seasonOptions{
+    width: 95%;
   }
 
-  footer div p {
+  .seasonOptions ul li{
+    padding: 20px 0;
     font-size: 1rem;
   }
 
-  footer .menu.footer {
-    flex-wrap: wrap;
-    justify-content: center;
+  article section.seasonDescription {
+    width: 95%;
+    margin: 10px auto 50px auto;
   }
+
+  article section.seasonDescription div h1 {
+    font-size: 2rem;
+  }
+
+  article section.seasonDescription div h3{
+    font-size: 1rem;
+  } 
+
+  article section.seasonDescription div p{
+    font-size: .9rem;
+    width: 80%;
+  }
+
 }
+
