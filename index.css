@@ -59,7 +59,8 @@ header .logo h1 {
   border-radius: 2px;
 }
 
-.navbar li:hover {
+.navbar li:hover,
+.navbar li.active {
   /*Estilo solo para el menu del header*/
   cursor: pointer;
   color: #fff;
@@ -373,11 +374,11 @@ article section.seasonDescription div p {
 }
 
 @media (max-width: 576px) {
-  .seasonOptions{
+  .seasonOptions {
     width: 95%;
   }
 
-  .seasonOptions ul li{
+  .seasonOptions ul li {
     padding: 20px 0;
     font-size: 1rem;
   }
@@ -391,14 +392,117 @@ article section.seasonDescription div p {
     font-size: 2rem;
   }
 
-  article section.seasonDescription div h3{
+  article section.seasonDescription div h3 {
     font-size: 1rem;
-  } 
-
-  article section.seasonDescription div p{
-    font-size: .9rem;
-    width: 80%;
   }
 
+  article section.seasonDescription div p {
+    font-size: 0.9rem;
+    width: 80%;
+  }
 }
 
+/*ESTILOS DE CHARACTERS PAGE*/
+.charactersOptions {
+  width: fit-content;
+  background-color: #ef233c;
+  margin: 0 auto 30px auto;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.charactersOptions ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.charactersOptions ul li {
+  text-align: center;
+  padding: 40px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: 0.2s linear;
+}
+
+.charactersOptions ul li:hover,
+.charactersOptions ul li.active {
+  background-color: #2b2d42;
+  color: #fff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+article.characters {
+  width: 90%;
+  margin: 15px auto;
+  padding: 30px;
+}
+
+article section.characterDescription {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+
+section.characterDescription img {
+  width: 40%;
+  border-radius: 5px;
+}
+
+section.characterDescription h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+section.characterDescription p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+article section.actorDescription {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+@media (max-width: 576px) {
+  .charactersOptions {
+    width: 100%;
+  }
+
+  .charactersOptions ul li {
+    padding: 20px;
+    font-size: 0.9rem;
+  }
+
+  article.characters {
+    width: 100%;
+    margin: 10px auto;
+    padding: 10px;
+  }
+
+  article section.characterDescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  section.characterDescription img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  section.characterDescription h1 {
+    font-size: 1.5rem;
+  }
+
+  section.characterDescription p {
+    font-size: 1rem;
+  }
+}
