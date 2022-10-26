@@ -565,7 +565,6 @@ article.contactPage section.contactForm {
   width: 50%;
   padding: 20px;
   background-color: #ef233c;
-  box-shadow: 2px 8px;
   border-radius: 10px;
 }
 
@@ -618,7 +617,6 @@ article.contactPage section.socialMediaBox {
   height: max-content;
   background-color: #ef233c;
   padding: 20px;
-  box-shadow: 2px 8px;
   border-radius: 10px;
 }
 
@@ -668,3 +666,69 @@ article.contactPage section.socialMediaBox div.twitter:hover {
     width: 100%;
   }
 }
+
+/* REVIEWS */
+article section.reviewContainer{
+  width: 95%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  gap: 20px;
+}
+
+article section.reviewContainer h1{
+  font-size: 2rem;
+  text-align: center;
+}
+
+article section.reviewContainer a{
+  width: 100%;
+}
+
+article section.reviewContainer div.review{
+  display: flex;
+  flex-direction: row;
+  gap: 20px; 
+  align-items: center;
+  justify-content: flex-start;
+  transition: .2s linear; 
+  padding: 10px
+}
+
+article section.reviewContainer div.review img{
+  width: 300px;
+  height: auto;
+}
+
+article section.reviewContainer div.review h3{
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 576px) {
+  article section.reviewContainer h1{
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  article section.reviewContainer div.review{
+    flex-direction: column;
+    gap: 10px; 
+    align-items: center;
+    justify-content: center;
+    padding: 5px
+  }
+
+  article section.reviewContainer div.review img{
+    width: 100%;
+  }
+  
+  article section.reviewContainer div.review div{
+    text-align: center;
+  }
+}
+
+
+
+
