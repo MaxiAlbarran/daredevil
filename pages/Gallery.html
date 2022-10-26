@@ -19,6 +19,8 @@
       href="https://fonts.googleapis.com/css2?family=Murecho:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
+    <!-- LightBox -->
+    <link href="../styles/lightbox.css" rel="stylesheet" />
   </head>
   <body>
     <header>
@@ -48,7 +50,93 @@
       </nav>
     </header>
 
-    <h1>GALERIA</h1>
+    <article>
+      <section>
+        <h1 class="galleryTitle">Galeria de imagenes de Daredevil</h1>
+        <div class="galleryContainer">
+          <a
+            href="../assets/gallery/daredevil_one.webp"
+            data-lightbox="daredevil"
+            data-title="Marvel Daredevil"
+          >
+            <img
+              src="../assets/gallery/daredevil_one.webp"
+              alt="Daredevil Picture"
+            />
+          </a>
+          <a
+            href="../assets/gallery/daredevil_two.jpg"
+            data-lightbox="daredevil"
+            data-title="Marvel Daredevil"
+          >
+            <img
+              src="../assets/gallery/daredevil_two.jpg"
+              alt="Daredevil Picture"
+            />
+          </a>
+          <a
+            href="../assets/gallery/daredevil_three.webp"
+            data-lightbox="daredevil"
+            data-title="Marvel Daredevil"
+          >
+            <img
+              src="../assets/gallery/daredevil_three.webp"
+              alt="Daredevil Picture"
+            />
+          </a>
+          <a
+            href="../assets/gallery/daredevil_four.webp"
+            data-lightbox="daredevil"
+            data-title="Marvel Daredevil"
+          >
+            <img
+              src="../assets/gallery/daredevil_four.webp"
+              alt="Daredevil Picture"
+            />
+          </a>
+          <a
+            href="../assets/gallery/daredevil_five.webp"
+            data-lightbox="daredevil"
+            data-title="Marvel Daredevil"
+          >
+            <img
+              src="../assets/gallery/daredevil_five.webp"
+              alt="Daredevil Picture"
+            />
+          </a>
+          <a
+            href="../assets/gallery/daredevil_six.jpg"
+            data-lightbox="daredevil"
+            data-title="Marvel Daredevil"
+          >
+            <img
+              src="../assets/gallery/daredevil_six.jpg"
+              alt="Daredevil Picture"
+            />
+          </a>
+          <a
+            href="../assets/gallery/daredevil_seven.jpg"
+            data-lightbox="daredevil"
+            data-title="Marvel Daredevil"
+          >
+            <img
+              src="../assets/gallery/daredevil_seven.jpg"
+              alt="Daredevil Picture"
+            />
+          </a>
+          <a
+            href="../assets/gallery/daredevil_eight.webp"
+            data-lightbox="daredevil"
+            data-title="Marvel Daredevil"
+          >
+            <img
+              src="../assets/gallery/daredevil_eight.webp"
+              alt="Daredevil Picture"
+            />
+          </a>
+        </div>
+      </section>
+    </article>
 
     <footer>
       <div>
@@ -60,11 +148,16 @@
         <li><a href="./Gallery.html">Galeria</a></li>
         <li><a href="./Characters/Daredevil.html">Personajes</a></li>
         <li><a href="./Reviews.html">Criticas y notas</a></li>
-        <li><a href="./Actors.html">Reparto</a></li>
         <li><a href="./Contact.html">Contacto</a></li>
       </ul>
     </footer>
     <script src="../script.js"></script>
-
+    <script src="../lightbox-plus-jquery.js"></script>
+    <script>
+      lightbox.option({
+        resizeDuration: 200,
+        wrapAround: true,
+      });
+    </script>
   </body>
 </html>
