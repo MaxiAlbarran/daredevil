@@ -557,8 +557,7 @@ article.contactPage {
   width: 100%;
   padding: 50px;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  justify-content: center;
 }
 
 article.contactPage section.contactForm {
@@ -612,22 +611,24 @@ section.contactForm form button:hover {
   color: #fff;
 }
 
-article.contactPage section.socialMediaBox {
-  width: 40%;
-  height: max-content;
-  background-color: #ef233c;
+article.contactPage section.contactForm div.socialMediaBox {
+  width: 100%;
   padding: 20px;
-  border-radius: 10px;
 }
 
-article.contactPage section.socialMediaBox h1 {
+article.contactPage section.contactForm div.socialMediaBox ul{
+  display: flex;
+  flex-direction: row;
+}
+
+article.contactPage section.contactForm div.socialMediaBox h1 {
   font-size: 1.5rem;
   margin-bottom: 20px;
   text-transform: uppercase;
 }
-article.contactPage section.socialMediaBox div {
+article.contactPage section.contactForm div.socialMediaBox ul li {
   width: 100%;
-  padding: 20px;
+  padding: 10px;
   margin-bottom: 5px;
   text-align: center;
   cursor: pointer;
@@ -635,24 +636,24 @@ article.contactPage section.socialMediaBox div {
   transition: 0.2s linear;
 }
 
-article.contactPage section.socialMediaBox div.instagram:hover {
+article.contactPage section.contactForm div.socialMediaBox ul li.instagram:hover {
   background-color: #3f729b;
   color: #fff;
 }
-article.contactPage section.socialMediaBox div.facebook:hover {
+article.contactPage section.contactForm div.socialMediaBox ul li.facebook:hover {
   background-color: #3b5998;
   color: #fff;
 }
-article.contactPage section.socialMediaBox div.youtube:hover {
+article.contactPage section.contactForm div.socialMediaBox ul li.youtube:hover {
   background-color: #c4302b;
   color: #fff;
 }
-article.contactPage section.socialMediaBox div.twitter:hover {
+article.contactPage section.contactForm div.socialMediaBox ul li.twitter:hover {
   background-color: #00acee;
   color: #fff;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   article.contactPage {
     padding: 15px;
     gap: 30px;
@@ -662,8 +663,9 @@ article.contactPage section.socialMediaBox div.twitter:hover {
     width: 100%;
   }
 
-  article.contactPage section.socialMediaBox {
-    width: 100%;
+  article.contactPage section.contactForm div.socialMediaBox ul{
+    flex-direction: column;
+    gap: 10px
   }
 }
 
